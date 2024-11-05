@@ -1,0 +1,55 @@
+body{
+  background-image: url('./img/background.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+#navbar {
+  background-color: rgb(34, 31, 31);
+}
+
+#navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Menü elemanlarını ortalar */
+  align-items: center;
+  list-style: none; /* Madde işaretlerini kaldırır */
+  padding: 0;
+  margin: 0;
+}
+#item {
+  color: aliceblue;
+  margin-left: 15px;
+  text-decoration: none; 
+}
+
+#item:hover {
+  color: rgb(230, 92, 92);
+}
+
+#navBrand {
+  color: aliceblue;
+  text-shadow: 5px 5px 3px crimson;
+}
+
+#navBrand:hover {
+  color: rgb(230, 92, 92);
+ 
+}
+.instagram {
+  color: rgb(227, 15, 128);
+
+}
+.facebook {
+ color: rgb(20, 20, 249);
+}
+.twitter {
+ color: rgb(46, 188, 235);
+}
+.foot{
+  color: aliceblue;
+}
+.foot:hover {
+  color: rgb(230, 92, 92);
+  text-shadow: 10px 10px 7px crimson;
+}
