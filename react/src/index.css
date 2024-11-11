@@ -11,9 +11,9 @@ body{
 
 #navbar .navbar-nav {
   display: flex;
-  justify-content: center; /* Menü elemanlarını ortalar */
+  justify-content: center; 
   align-items: center;
-  list-style: none; /* Madde işaretlerini kaldırır */
+  list-style: none; 
   padding: 0;
   margin: 0;
 }
@@ -52,4 +52,45 @@ body{
 .foot:hover {
   color: rgb(230, 92, 92);
   text-shadow: 10px 10px 7px crimson;
+}
+@keyframes daireselHareket {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3px, -3px);
+  }
+  50% {
+    transform: translate(6px, 0);
+  }
+  75% {
+    transform: translate(3px, 3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.card {
+  animation: daireselHareket 2s  ease-in-out infinite;
+}
+.hour {
+  padding: 3px;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px orangered,
+               0 0 20px orangered,
+               0 0 40px orangered,
+               0 0 80px orangered;
+  border: solid 2px  cyan;   
+  border-radius: 5px; 
+      
+}
+.close {
+  text-shadow: 0 0 10px orangered,
+  0 0 20px orangered,
+  0 0 40px orangered,
+  0 0 80px orangered;
 }
