@@ -40,7 +40,7 @@ function MenuList() {
   const changeLeft = () => {
     setStartIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
   };
-
+ 
   const changeRight = () => {
     setStartIndex((prevIndex) =>
       prevIndex < menu.length - 3 ? prevIndex + 1 : menu.length - 3

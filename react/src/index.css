@@ -1,10 +1,24 @@
-body{
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url('./img/background.png');
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: black;
 }
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #navbar {
   background-color: rgb(34, 31, 31);
 }
@@ -93,4 +107,31 @@ body{
   0 0 20px orangered,
   0 0 40px orangered,
   0 0 80px orangered;
+}
+@media (max-width: 576px) {
+ .message{
+   font-size: medium;
+ }
+      
+ }
+ .bizkimiz {
+  background-image: url('../public/img/about.webp');
+  border-radius: 20px;
+  color: white;
+  transition: all 0.5s ease; /* Tüm değişikliklere yumuşak geçiş ekler */
+}
+
+.bizkimiz:active {
+  font-size: x-large;
+  font-weight: bold;
+  color: orangered; 
+  text-shadow: 
+      -1px -1px 0 white, /* Sol üst */
+       1px -1px 0 white, /* Sağ üst */
+      -1px  1px 0 white, /* Sol alt */
+       1px  1px 0 white; /* Sağ alt */
+  background-image: url('../public/img/transfer.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

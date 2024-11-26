@@ -12,7 +12,7 @@ export default function Footer() {
             const hour = now.getHours();
             const minute = now.getMinutes();
 
-            // 23:30’dan sonra veya 9:00’dan önce kapalı olarak kabul ediyoruz
+        
             if ((hour > 23 || (hour === 23 && minute >= 30)) || hour < 9) {
                 setIsClosed(true);
             } else {
@@ -51,7 +51,8 @@ export default function Footer() {
 
             {/* Açık/Kapalı Mesajı */}
             <div className="mx-3 close">
-                <h4>{isClosed ? kapali : kapanis}</h4>
+                <h4 className='message'>
+                    {isClosed ? kapali : kapanis}</h4>
             </div>
 
             <div className="container mt-5">
