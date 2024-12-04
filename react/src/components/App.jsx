@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Menus from './Menus'; 
 import MenuList from './MenuList';
 import About from './About';
-import Content from './Content';
+import Contact from './Contact';
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<><Slider /><MenuList /></>} />
           <Route path="/Menus" element={<Menus />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Content" element={<Content />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
