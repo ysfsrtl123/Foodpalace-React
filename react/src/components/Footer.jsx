@@ -81,16 +81,16 @@ export default function Footer() {
                         <h5 className="mb-4">FoodPalace Hakkında</h5>
                         <ul className="list-unstyled">
                             <li className="mb-2">
-                                <a href="#" className="foot text-decoration-none">FOODPALACE Kimdir?</a>
+                                <a href="/About" className="foot text-decoration-none">FOODPALACE Kimdir?</a>
                             </li>
                             <li className="mb-2">
                                 <a href="#" className="foot text-decoration-none">Hizmetlerimiz</a>
                             </li>
                             <li className="mb-2">
-                                <a href="#" className="foot text-decoration-none">Misyonumuz</a>
+                                <a href="/About" className="foot text-decoration-none">Misyonumuz</a>
                             </li>
                             <li>
-                                <a href="#" className="foot text-decoration-none">Vizyonumuz</a>
+                                <a href="/About" className="foot text-decoration-none">Vizyonumuz</a>
                             </li>
                         </ul>
                     </div>

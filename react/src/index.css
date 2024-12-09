@@ -163,6 +163,80 @@ main {
   background-position: center;
   background-size: cover;
 }
+.vertical-line {
+  width: 10px; 
+  height: 715px; 
+  background: white; 
+  position: relative; 
+  overflow: hidden; 
+  transition: background-color 0.5s ease; 
+}
+
+.vertical-line::before {
+  content: ''; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0; 
+  background: orangered; 
+  transition: height 0.5s ease;
+}
+
+.vertical-line:hover::before {
+  height: 100%; 
+}
+
+/* Açıkken */
+.col-6.soft {
+  transition: width 1.5s ease, opacity 0.5s ease; /* 2 saniyede genişleyecek */
+  width: 50%;
+  opacity: 1;
+}
+
+/* Kapalıyken */
+.col-6.soft.collapsed {
+  transition: width 0.5s ease, opacity 0.5s ease; /* Kapanma sırasında da geçerli */
+  width: 100%;
+  opacity: 1; /* Opsiyonel */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.combination {
+  position: fixed;
+  color: orangered;
+  width: 500px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.combination.animate {
+  animation: slideIn 2s ease forwards, grow 0.5s ease forwards;
+}
+
  }
 
 .kurucu{
