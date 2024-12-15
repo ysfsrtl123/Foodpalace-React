@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom'; // Link import edildi
-
-const Navbar = () => {
+import { Link } from 'react-router-dom';
+const Navbar = ({ onOpenModal }) => {
   return (
     <div className="fixed-top">
       <header>
@@ -38,9 +37,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-4" to="/contact" id="item">
+                  <button className="nav-link mx-4" onClick={onOpenModal} id="item">
                     <strong>İletişim</strong>
-                  </Link>
+                  </button>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link mx-4" to="/branches" id="item">

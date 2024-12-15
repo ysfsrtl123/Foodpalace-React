@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import menuData from "./data";
+import {menuData} from "./data";
 
 function Menus() {
   const [activeIndex, setActiveIndex] = useState(null); // Hangi collaps açık

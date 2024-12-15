@@ -211,6 +211,16 @@ main {
     opacity: 1;
   }
 }
+@keyframes slideUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes grow {
   from {
@@ -254,4 +264,22 @@ main {
        1px -1px 0 white, /* Sağ üst */
       -1px  1px 0 white, /* Sol alt */
        1px  1px 0 white; /* Sağ alt */
+}
+
+.modal-content{
+  color:white;
+  text-shadow: 
+      -2px -2px 0 black,
+      2px  -2px 0 black,
+      -1px 1px  0 black,
+      1px  1px 0 black
+  ;
+  background-image: url(../public/img/biftek.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideUp 1.5s ease-out;
+}
+.branch{
+  background-color: darkgray;
+  
 }

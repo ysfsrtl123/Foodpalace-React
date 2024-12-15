@@ -71,7 +71,7 @@ export default function Footer() {
                                 <a href="/Menus" className="foot text-decoration-none">Menülerimiz</a>
                             </li>
                             <li>
-                                <a href="/Contact" className="foot text-decoration-none">İletişim</a>
+                                <a href="/Branches" className="foot text-decoration-none">Şubelerimiz</a>
                             </li>
                         </ul>
                     </div>

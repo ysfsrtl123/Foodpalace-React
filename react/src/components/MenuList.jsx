@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Menu from "./Menu";
-import menuData from "./data"; 
+import {menuData} from "./data"; 
 
 function MenuList() {
   const [startIndex, setStartIndex] = useState(0);

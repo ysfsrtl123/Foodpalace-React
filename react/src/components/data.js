@@ -1,4 +1,4 @@
-const menuData = [
+export const menuData = [
   {
     id: 0,
     title: "Adana Şiş Kebap",
@@ -48,5 +48,41 @@ const menuData = [
     image: "../img/taco.jpg",
   },
 ];
+export const sliderImg = [{
+  id:1,
+  name: "arkaplan png",
+  image: '../public/img/background.png'
+},
+ {
+  id:2,
+  name:"kampanya1 png",
+  image:'../public/img/biftek.webp'
+ }
+];
 
-export default menuData;
+export const branches = [
+  {
+    id: Date.now(),
+    sube_adi: "antalya şubesi",
+    adres:"aa.aa.aa/antalya",
+    puan:"8.2/10",
+    img:"/img/sube1.webp"
+  },
+  {
+    id: Date.now(),
+    sube_adi:"adana şubesi",
+    adres:"aa.aa.aa/adana",
+    puan: "9/10",
+    img: "/img/background.png"
+  }
+]
+
+/* export const contactData = [
+  {
+    id:Date.now(),
+    eMail: emailValue,
+    phone: phoneValue,
+    phoneCheck: false
+  } 
+];*/
+
