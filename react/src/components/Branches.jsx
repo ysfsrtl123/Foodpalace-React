@@ -1,4 +1,4 @@
-import { branches } from "./data";
+
 export default Branches;
 
 function Branches({branches}) {
