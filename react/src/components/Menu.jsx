@@ -1,17 +1,16 @@
-import  { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import anime from 'animejs';
 
-function Menu({ menu}) {
+
+function Menu({ menuData}) {
   
     
 
   return (
     <div className="card mx-auto mb-4 mt-4 kart" style={{ width: "18rem" }}>
-      <img src={menu.image} className="card-img-top w-100 h-100" alt="menu fotoğrafı" />
+      <img src={menuData.image} className="card-img-top w-100 h-100" alt="menu fotoğrafı" />
       <div className="card-body">
-        <h5 className="card-title">{menu.title}</h5>
-        <p className="card-text">{menu.description}</p>
+        <h5 className="card-title">{menuData.title}</h5>
+        <p className="card-text">{menuData.description}</p>
         <div className="btn btn-outline-primary rounded-pill">Detay</div>
       </div>
     </div>
@@ -19,8 +18,9 @@ function Menu({ menu}) {
 } 
 
 Menu.propTypes = {
-  menu: PropTypes.shape({
+  menuData: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
   }).isRequired,

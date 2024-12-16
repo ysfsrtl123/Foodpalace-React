@@ -6,7 +6,7 @@ const Slider = () => {
   };
 
   return (
-    <main>
+    <div className="container-fluid">
       <div
         id="carouselExampleAutoplaying"
         className="carousel slide mt-5"
@@ -60,7 +60,8 @@ const Slider = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </main>
+    </div>
+      
   );
 };
 
