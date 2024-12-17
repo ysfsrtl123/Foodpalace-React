@@ -139,6 +139,16 @@ main {
   background-position: center;
   background-size: cover;
 }
+.col-6.soft{
+  width:100%;
+  opacity: 1;
+}
+.combination {
+  display: none;
+}
+.vertical-line {
+  display: none;
+}
       
  }
  @media (min-width:577px){

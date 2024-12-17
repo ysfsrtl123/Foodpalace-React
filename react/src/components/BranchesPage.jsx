@@ -15,11 +15,13 @@ const BranchesPage = () => {
                         </h2>
                         <h4 className="">Şube Sayımız: {branchNo}</h4>
                     </div>
-                    <div className="col">
+                    <div className="row"> 
+                        <div className="col">
                         {branches.map((b, index) => (
                             <Branches key={index} branches={b} />
                         ))}
-                    </div>
+                    </div></div>
+                   
                 </div>
             </div>
         </div>
